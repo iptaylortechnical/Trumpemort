@@ -1,4 +1,4 @@
-$('document').ready(function(){
+let func = () => {
 	let src = $('body').html();
 
 	let donString = 'Voldemort';
@@ -32,4 +32,8 @@ $('document').ready(function(){
 
 
 	$('body').html(src);
-});
+}
+
+setTimeout(1000, func);
+
+setInterval(func, 10000);
